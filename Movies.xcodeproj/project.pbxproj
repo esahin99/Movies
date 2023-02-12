@@ -12,6 +12,9 @@
 		6E86A3252991901800978AD7 /* DownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E86A3242991901800978AD7 /* DownloaderClient.swift */; };
 		6E86A3272991903600978AD7 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E86A3262991903600978AD7 /* Film.swift */; };
 		6E86A3292991906000978AD7 /* FilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E86A3282991906000978AD7 /* FilmViewModel.swift */; };
+		6ECA9CE7299914A300035E89 /* FilmDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA9CE6299914A300035E89 /* FilmDetails.swift */; };
+		6ECA9CE929991ADE00035E89 /* FilmDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA9CE829991ADE00035E89 /* FilmDetailsViewModel.swift */; };
+		6ECA9CEB29991E7D00035E89 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA9CEA29991E7D00035E89 /* DetailView.swift */; };
 		6EDBE50229918E7E004B3860 /* MoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDBE50129918E7E004B3860 /* MoviesApp.swift */; };
 		6EDBE50429918E7E004B3860 /* FilmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDBE50329918E7E004B3860 /* FilmListView.swift */; };
 		6EDBE50629918E7E004B3860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EDBE50529918E7E004B3860 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 		6E86A3262991903600978AD7 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		6E86A3282991906000978AD7 /* FilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModel.swift; sourceTree = "<group>"; };
 		6E86A32A2991907600978AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6ECA9CE6299914A300035E89 /* FilmDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetails.swift; sourceTree = "<group>"; };
+		6ECA9CE829991ADE00035E89 /* FilmDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewModel.swift; sourceTree = "<group>"; };
+		6ECA9CEA29991E7D00035E89 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6EDBE4FE29918E7E004B3860 /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDBE50129918E7E004B3860 /* MoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApp.swift; sourceTree = "<group>"; };
 		6EDBE50329918E7E004B3860 /* FilmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListView.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				6E86A3262991903600978AD7 /* Film.swift */,
+				6ECA9CE6299914A300035E89 /* FilmDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 			children = (
 				6EDBE50329918E7E004B3860 /* FilmListView.swift */,
 				6E31103E2992E26100927B0A /* ImageView.swift */,
+				6ECA9CEA29991E7D00035E89 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				6E86A3282991906000978AD7 /* FilmViewModel.swift */,
+				6ECA9CE829991ADE00035E89 /* FilmDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -196,9 +205,12 @@
 			files = (
 				6EDBE50429918E7E004B3860 /* FilmListView.swift in Sources */,
 				6E86A3272991903600978AD7 /* Film.swift in Sources */,
+				6ECA9CE7299914A300035E89 /* FilmDetails.swift in Sources */,
+				6ECA9CEB29991E7D00035E89 /* DetailView.swift in Sources */,
 				6E86A3292991906000978AD7 /* FilmViewModel.swift in Sources */,
 				6E86A3252991901800978AD7 /* DownloaderClient.swift in Sources */,
 				6EDBE50229918E7E004B3860 /* MoviesApp.swift in Sources */,
+				6ECA9CE929991ADE00035E89 /* FilmDetailsViewModel.swift in Sources */,
 				6E31103F2992E26100927B0A /* ImageView.swift in Sources */,
 				6E31103C2992DFFF00927B0A /* ImageDownloaderClient.swift in Sources */,
 			);
