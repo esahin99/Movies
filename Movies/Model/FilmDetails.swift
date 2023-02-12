@@ -26,7 +26,7 @@ struct FilmDetails: Codable{
         case title = "Title"
         case year = "Year"
         case genre = "Genre"
-        case director = "Diretor"
+        case director = "Director"
         case writer = "Writer"
         case actors = "Actors"
         case plot = "Plot"
