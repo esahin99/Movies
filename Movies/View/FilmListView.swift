@@ -11,7 +11,7 @@ struct FilmListView: View {
     @ObservedObject var filmListViewModel: FilmListViewModel
     @State var searchFilm = ""
     
-    init(){
+    init() {
         self.filmListViewModel = FilmListViewModel()
     }
     
@@ -20,27 +20,38 @@ struct FilmListView: View {
             VStack{
                 TextField("Enter a Movie Name", text: $searchFilm, onCommit:{
                     self.filmListViewModel.searchFilm(filmName: searchFilm.trimmingCharacters(in: .whitespacesAndNewlines).addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? searchFilm)
-                }).padding().textFieldStyle(.roundedBorder)
+                })
+                .padding(.horizontal)
+                .textFieldStyle(.roundedBorder)
+                .padding(.vertical)
                 
-                List(filmListViewModel.films, id: \.imdbId){ (film) in
-                    NavigationLink(destination: DetailView(imdbId: film.imdbId), label:{
+                List(filmListViewModel.films, id: \.imdbId) { film in
+                    NavigationLink(destination: DetailView(imdbId: film.imdbId)) {
                         HStack{
                             ImageView(url: film.poster)
                                 .frame(width: 100, height: 150)
+                            
                             VStack(alignment: .leading){
                                 Text(film.title)
                                     .font(.title3)
                                     .foregroundColor(.blue)
+                                
                                 Text(film.year)
                                     .foregroundColor(.orange)
                             }
+                            
+                            Spacer()
                         }
-                    })
-                }.navigationTitle(Text("Movies"))
+                    }
+                }
+                .listStyle(.plain)
             }
+            .navigationTitle(Text("Movies"))
+            .background(Color(.systemGray6))
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
